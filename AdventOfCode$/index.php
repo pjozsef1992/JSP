@@ -47,12 +47,7 @@ include './phpHtmLelEment$/Link.php';
         </style>
         <script type="text/javascript">
         
-            var cb = document.getElementById("#cb");
-       
-           
-            if(cb.checked=true){
-                alert("Szia");
-            }
+         
           
         
       
@@ -66,9 +61,9 @@ include './phpHtmLelEment$/Link.php';
                 $fooldal = new Link();
                 $fooldal->sethtmlType("div");
                 $fooldal->sethtmlattribute("class", "btn btn-light");
-                $fooldal->sethtmlattribute("id", "fooldal");
+                $fooldal->sethtmlattribute("id", "homepage");
                 $fooldal->setHref("index.php");
-                $fooldal->sethtmlcontain("Főoldal");
+                $fooldal->sethtmlcontain("HOME");
                 $fooldal->setLink();
                 
                 $registration = new Link();
@@ -138,7 +133,7 @@ include './phpHtmLelEment$/Link.php';
        $form->setForm("POST", "regForm", "regFormid");
        
        $menu1 = new Link();
-       $menu1->sethtmlcontain("Vissza");
+       $menu1->sethtmlcontain("back");
        $menu1->setHref("index.php");
        $menu1->sethtmlType("div");
        $menu1->sethtmlattribute("class","btn btn-primary col-4");
