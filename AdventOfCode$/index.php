@@ -47,7 +47,12 @@ include './phpHtmLelEment$/Link.php';
         </style>
         <script type="text/javascript">
         
-         
+            var cb = document.getElementById("#cb");
+       
+           
+            if(cb.checked=true){
+                alert("Szia");
+            }
           
         
       
@@ -58,13 +63,13 @@ include './phpHtmLelEment$/Link.php';
             <div class="row">
                 <?php
              
-                $fooldal = new Link();
-                $fooldal->sethtmlType("div");
-                $fooldal->sethtmlattribute("class", "btn btn-light");
-                $fooldal->sethtmlattribute("id", "homepage");
-                $fooldal->setHref("index.php");
-                $fooldal->sethtmlcontain("HOME");
-                $fooldal->setLink();
+                $homepage = new Link();
+                $homepage->sethtmlType("div");
+                $homepage->sethtmlattribute("class", "btn btn-light");
+                $homepage->sethtmlattribute("id", "fooldal");
+                $homepage->setHref("index.php");
+                $homepage->sethtmlcontain("Főoldal");
+                $homepage->setLink();
                 
                 $registration = new Link();
                 $registration->setHref("index.php?reg");
@@ -133,7 +138,7 @@ include './phpHtmLelEment$/Link.php';
        $form->setForm("POST", "regForm", "regFormid");
        
        $menu1 = new Link();
-       $menu1->sethtmlcontain("back");
+       $menu1->sethtmlcontain("Vissza");
        $menu1->setHref("index.php");
        $menu1->sethtmlType("div");
        $menu1->sethtmlattribute("class","btn btn-primary col-4");
