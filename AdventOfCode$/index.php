@@ -66,9 +66,9 @@ include './phpHtmLelEment$/Link.php';
                 $homepage = new Link();
                 $homepage->sethtmlType("div");
                 $homepage->sethtmlattribute("class", "btn btn-light");
-                $homepage->sethtmlattribute("id", "fooldal");
+                $homepage->sethtmlattribute("id", "homepage");
                 $homepage->setHref("index.php");
-                $homepage->sethtmlcontain("Főoldal");
+                $homepage->sethtmlcontain("HOME");
                 $homepage->setLink();
                 
                 $registration = new Link();
